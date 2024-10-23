@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Project Portfolio</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Semester 1 Projects Section -->
+        <section class="portfolio-section">
+            <div class="container">
+                <h2>Semester 1 Projects</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="project 1.PNG" alt="Project 1">
+                        <h3>Website Redesign</h3>
+                        <p><strong>Summary:</strong> A complete overhaul of an existing website with modern design practices.</p>
+                        <button onclick="loadDescription('descriptions/project1.txt', 'description1')">Show Description</button>
+                        <p id="description1" class="project-description"></p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="project 2.PNG" alt="Project 2">
+                        <h3>E-commerce Platform</h3>
+                        <p><strong>Summary:</strong> Developed an online store with full shopping cart and payment integration.</p>
+                        <button onclick="loadDescription('descriptions/project2.txt', 'description2')">Show Description</button>
+                        <p id="description2" class="project-description"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 2 Projects Section -->
+        <section class="portfolio-section">
+            <div class="container">
+                <h2>Semester 2 Projects</h2>
+                <div class="project-grid">
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="project 3.PNG" alt="Project 3">
+                        <h3>Mobile App Development</h3>
+                        <p><strong>Summary:</strong> Created a mobile app for tracking fitness activities with a user-friendly interface.</p>
+                        <button onclick="loadDescription('descriptions/project3.txt', 'description3')">Show Description</button>
+                        <p id="description3" class="project-description"></p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="project 4.PNG" alt="Project 4">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p><strong>Summary:</strong> Developed a web-based dashboard to visualize large datasets in real-time.</p>
+                        <button onclick="loadDescription('descriptions/project4.txt', 'description4')">Show Description</button>
+                        <p id="description4" class="project-description"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

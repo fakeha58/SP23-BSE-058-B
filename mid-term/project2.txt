@@ -1,0 +1,2 @@
+Project 2 Description:
+This project is about creating a dynamic blog platform using HTML, CSS, and a JavaScript backend for adding and removing posts.
