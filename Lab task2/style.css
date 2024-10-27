@@ -1,0 +1,56 @@
+body {
+    background-color: #121212;
+    color: #d3d3d3;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  aside {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #postsContainer .post-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    color: #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  #postsContainer .post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .post-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .post-card .post-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #ff7b54;
+    border-color: #ff7b54;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff6347;
+    border-color: #ff6347;
+  }
+  
+  .modal-content {
+    background-color: #333;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <aside class="bg-dark p-4 text-light vh-100">
+      <h2 class="mb-4">Dashboard</h2>
+      <nav>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-light">Home</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-light">Posts</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a href="#" class="nav-link text-light">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#postModal">+ New Post</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <header class="mb-5">
+        <h1 class="text-center text-light">Post Management</h1>
+      </header>
+
+      <!-- Posts Section -->
+      <section id="postsContainer" class="row gy-4"></section>
+
+      <!-- Modal for Add/Edit Post -->
+      <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="postModalLabel">Create a Post</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="postTitle" class="form-label">Title</label>
+                <input type="text" id="postTitle" class="form-control" placeholder="Enter title">
+              </div>
+              <div class="mb-3">
+                <label for="postBody" class="form-label">Content</label>
+                <textarea id="postBody" class="form-control" placeholder="Enter content" rows="4"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" onclick="savePost()">Save Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
