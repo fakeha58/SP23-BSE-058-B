@@ -1,0 +1,46 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem;
+    color: lightgray;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h2 {
+      font-size: 2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
