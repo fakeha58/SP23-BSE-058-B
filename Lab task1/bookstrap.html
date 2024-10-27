@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfitters</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 1rem;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .carousel-item img {
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .carousel-caption h2 {
+      font-size: 3rem;
+      color: white;
+    }
+
+    .carousel-caption p {
+      font-size: 1.5rem;
+      color: lightgray;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-caption h2 {
+        font-size: 2rem;
+      }
+
+      .carousel-caption p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.PNG" alt="Outfitters Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Special Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Available Online & In Stores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel/Slider Section -->
+  <div id="outfittersCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Slide1.PNG" class="d-block w-100" alt="Outfitters F/W 24">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>ESSENTIALS F/W 24</h2>
+          <p class="text-light">MEN | SPECIAL PRICES</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Slide2.PNG" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="Slide3.PNG" class="d-block w-100" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="Slide4.PNG" class="d-block w-100" alt="Slide 4">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
