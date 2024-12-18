@@ -1,0 +1,396 @@
+/* Reset body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  .search-bar {
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+  }
+  
+  .search-bar button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background: #444;
+  }
+  
+  .login-modal {
+    text-align: center;
+    padding: 20px;
+  }
+  .login-modal h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .login-modal input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+  .login-modal button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  .login-modal a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .login-modal, .register-modal {
+    text-align: center;
+    padding: 20px;
+  }
+  .login-modal h3, .register-modal h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .login-modal input, .register-modal input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+  }
+  .login-modal button, .register-modal button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  .login-modal a, .register-modal a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  
+  
+     /* Styling for the top logo with hamburger menu */
+     .top-left-container {
+      position: absolute;
+      top: 20px; /* Distance from the top */
+      left: 20px; /* Distance from the left */
+      display: flex; /* Align items horizontally */
+      align-items: center;
+      z-index: 10; /* Ensures it stays on top of other content */
+    }
+  
+    /* Hamburger menu styling */
+    .hamburger-menu {
+      font-size: 1.8rem; /* Size of the 3 horizontal lines */
+      color: white; /* Color of the menu icon */
+      margin-right: 15px; /* Spacing between the icon and logo */
+      cursor: pointer;
+    }
+  
+    /* Outfitters Logo Styling */
+    .logo {
+      font-size: 2rem; /* Reduced font size */
+      font-weight: 600; /* Semi-bold for better contrast */
+      color: white; /* White color for the text */
+      font-family: Arial, sans-serif; /* Clean and modern font */
+      line-height: 1; /* Adjust line height for alignment */
+      text-transform: none; /* Removed uppercase */
+    }
+  
+  
+       /* Side Menu Styles */
+       .side-menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        z-index: 1050;
+        padding: 20px;
+      }
+  
+      .side-menu.open {
+        left: 0;
+      }
+  
+      .side-menu .menu-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+  
+      .side-menu ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .side-menu ul li {
+        margin-bottom: 10px;
+      }
+  
+      .side-menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+      }
+  
+      .side-menu ul.submenu {
+        margin-left: 20px;
+      }
+  
+      .side-menu ul.submenu li a {
+        font-size: 16px;
+      }
+  
+      .side-menu ul li a:hover {
+        text-decoration: underline;
+      }
+  
+      .side-menu .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+  
+      .horizontal-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid #ddd;
+      }
+  
+      .horizontal-menu li {
+        margin: 0 10px;
+      }
+  
+      .horizontal-menu li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 12px;
+      }
+  
+      .horizontal-menu li a:hover {
+        color: #fff;
+        background-color: #000;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+  
+      .menu-content {
+        display: none;
+      }
+  
+      .menu-content.active {
+        display: block;
+      }
+  
+  
+  /* Carousel images */
+  .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Top icons (Search, User, Cart) */
+  .top-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+  }
+  
+  .top-icons i {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .top-icons i:hover {
+    color: #ccc; /* Light gray hover effect */
+  }
+  
+  /* Bottom Navbar for each slide */
+  .bottom-navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links li a:hover {
+    color: #ccc; /* Light gray hover effect */
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .bottom-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 15px;
+  }
+  
+  .bottom-navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .bottom-navbar a:hover {
+    color: #0078ff;
+  }
+  
+  footer{
+    height: 100%;
+}
+.pannel1{
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+.pannel2{
+    padding: 3%;
+    height: 50vh;
+    background-color: white;
+}
+.CopyrightText{
+    text-align: center;
+    margin-top: 8%;
+}
+.AboutinfoPannel{
+    display: flex;
+    justify-content: space-between;
+}
+.AboutinfoPannel img{
+    color: white;
+    height: 60%;
+    padding-left: 20%;
+}
+.footerlinks_UL>li>a,.pannel1>p{
+    color: white;
+    text-decoration: none;
+}
+.footerlinks_UL>li{
+    display: inline-block;
+}
+.pannel1>input{
+    padding: 1.2%;
+    text-align: center;
+    width: 35%;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.footerlinks_UL>li ::after{
+    content: "|";
+    padding: 7px;
+}
+.pannel1 ul,.pannel1 input,.pannel1 p{
+    margin: 1.1%;
+}
+.pannel1 p{
+    font-size: x-large;
+}
+
+.AboutinfoPannel a:hover{
+    text-decoration: underline;
+    font-size: large;
+}
+
+
+
+.parallax-item {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  
