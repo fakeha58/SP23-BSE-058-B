@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfitters</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Top Left Container with Hamburger Menu and Logo -->
+    <div class="top-left-container">
+      <div class="hamburger-menu">
+        <i class="bi bi-list" id="menuToggle"></i>
+      </div>
+      <div class="logo">Outfitters</div>
+    </div>
+<!-- Main Carousel -->
+<div id="outfittersCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="../images/img1.webp" class="d-block w-100" alt="Winter Collection">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">WINTER 24-25</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="../images/img2.webp" class="d-block w-100" alt="Looks">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">JUNIORS</a></li>
+          <li><a href="#">JUNIOR BOYS</a></li>
+          <li><a href="#">JUNIOR GIRLS</a></li>
+          <li><a href="#">BABY BOYS</a></li>
+          <li><a href="#">BABY GIRLS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="../images/img3.webp" class="d-block w-100" alt="Artisanal">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls for Carousel 1 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Below Slides: Second Carousel -->
+<div id="outfittersCarousel2" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 4 -->
+    <div class="carousel-item active">
+      <img src="../images/img4.webp" class="d-block w-100" alt="Shop the Trend">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">WINTER 24-25</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <img src="../images/img5.webp" class="d-block w-100" alt="Junior Styles">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">JUNIORS</a></li>
+          <li><a href="#">JUNIOR BOYS</a></li>
+          <li><a href="#">JUNIOR GIRLS</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="carousel-item">
+      <img src="../images/img6.webp" class="d-block w-100" alt="Men's Looks">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls for Carousel 2 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#outfittersCarousel2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#outfittersCarousel2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div id="carouselGroup3" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 7 -->
+    <div class="carousel-item active">
+      <img src="../images/img7.jpg" class="d-block w-100" alt="Trend 7">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">WINTER 24-25</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Slide 8 -->
+    <div class="carousel-item">
+      <img src="../images/img8.webp" class="d-block w-100" alt="Trend 8">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">JUNIORS</a></li>
+          <li><a href="#">JUNIOR BOYS</a></li>
+          <li><a href="#">JUNIOR GIRLS</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Slide 9 -->
+    <div class="carousel-item">
+      <img src="../images/img9.jpg" class="d-block w-100" alt="Trend 9">
+      <div class="top-icons">
+        <i class="bi bi-search" title="Search" id="searchToggle"></i>
+        <i class="bi bi-person" title="User" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        <i class="bi bi-cart" title="Cart"></i>
+      </div>
+      <div class="bottom-navbar">
+        <ul class="nav-links">
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">ARTISANAL</a></li>
+          <li><a href="#">LOOKS</a></li>
+          <li><a href="#">SPECIAL PRICES</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Controls for Carousel Group 3 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselGroup3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselGroup3" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body login-modal">
+            <h3>Login</h3>
+            <form>
+              <input type="email" placeholder="Email" required>
+              <input type="password" placeholder="Password" required>
+              <a href="#">FORGOT YOUR PASSWORD?</a>
+              <button type="submit">Sign In</button>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">CREATE ACCOUNT</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body register-modal">
+            <h3>Create Account</h3>
+            <form>
+              <input type="text" placeholder="First name" required>
+              <input type="text" placeholder="Last name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#outfittersCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" id="closeMenu">&times;</div>
+    <div class="menu-header">Outfitters</div>
+
+    <!-- Horizontal Top Categories -->
+    <ul class="horizontal-menu">
+      <li><a href="#" data-target="men">Men</a></li>
+      <li><a href="#" data-target="women">Women</a></li>
+      <li><a href="#" data-target="juniors">Juniors</a></li>
+    </ul>
+
+    <!-- Menu Content -->
+    <div class="menu-content" id="men">
+      <ul>
+        <li><a href="#">Going Out</a></li>
+        <li><a href="#">Artisanal</a></li>
+        <li><a href="#">Special Prices</a></li>
+        <li>
+          <a href="#" class="toggle-submenu">New Arrivals</a>
+          <ul class="submenu">
+            <li><a href="#">View All</a></li>
+            <li><a href="#">Sweatshirts & Hoodies</a></li>
+            <li><a href="http://localhost:3000/home/sweater">Sweaters</a></li>
+            <li><a href="#">Jackets & Coats</a></li>
+            <li><a href="#">Shirts & Shackets</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Trousers</a></li>
+            <li><a href="#">Polos</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Activewear</a></li>
+            <li><a href="#">Footwear</a></li>
+            <li><a href="#">Fragrances</a></li>
+            <li><a href="#">Underwear</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Scan Barcode</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-content" id="women">
+      <ul>
+        <li><a href="#">Going Out</a></li>
+        <li><a href="#">Artisanal</a></li>
+        <li><a href="#">Special Prices</a></li>
+        <li>
+          <a href="#" class="toggle-submenu">New Arrivals</a>
+          <ul class="submenu">
+            <li><a href="#">View All</a></li>
+            <li><a href="#">Sweatshirts & Hoodies</a></li>
+            <li><a href="#">Sweaters & Cardigans</a></li>
+            <li><a href="#">Jackets & Coats</a></li>
+            <li><a href="#">Shirts & Shackets</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Suits</a></li>
+            <li><a href="#">Dresses & Jumpsuits</a></li>
+            <li><a href="#">Activewears</a></li>
+            <li><a href="#">Trousers</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Footwears</a></li>
+            <li><a href="#">Fragrances</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Scan Barcode</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-content" id="juniors">
+      <ul>
+        <li><a href="#">Special Prices</a></li>
+        <li>
+          <a href="#" class="toggle-submenu">New Arrivals</a>
+          <ul class="submenu">
+            <li><a href="#">GIRLS (6Y-14Y)</a></li>
+            <li><a href="#">BOYS (6Y-14Y)</a></li>
+            <li><a href="#">BABY GIRLS (6M-5Y)</a></li>
+            <li><a href="#">BABY BOYS (6M-5Y)</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Scan Barcode</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+  
+
+
+
+  <footer>
+    <div class="pannel1">
+        <p>
+            GET THE LATEST TRENDS FIRST
+        </p>
+        <input type="email" placeholder="Enter your email" title="Please fill out this">
+        <ul class="footerlinks_UL">
+            <li><a class="footerhover2" href="">Facebook</a></li>
+            <li><a class="footerhover2" href="">Instagram</a></li>
+            <li><a class="footerhover2" href="">Youtube</a></li>
+            <li><a class="footerhover2" href="">Tiktok</a></li>
+            <li><a class="footerhover2" href="">Pinterest</a></li>
+        </ul>
+    </div>
+    <div class="pannel2">
+        <div class="AboutinfoPannel">
+            <div>
+                <ul>
+                    <li><a href="">FAQ'S</a></li>
+                    <li><a href="">LogIn/Sign Up</a></li>
+                    <li><a href="">How To Buy</a></li>
+                    <li><a href="">Payment</a></li>
+                    <li><a href="">Shipping & Deliveries</a></li>
+                    <li><a href="">Exchange & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Retail Stores</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Work With Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrightpannel">
+            <p class="CopyrightText">@ Copyrights Reserved by outfitters 2024.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
